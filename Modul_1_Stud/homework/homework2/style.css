@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 1280px;
+    background-color: #E5E5E5;
+}
+
+.header-nav {
+    padding: 26px;
+}
+
+.header-nav-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #FF0000;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.title {
+    padding-top: 48px;
+}
+
+.paragrapf-1 {
+    padding-top: 38px;
+    padding-right: 67.5px;
+    padding-bottom: 28px;
+    padding-left: 67.5px;
+}
+.paragrapf-2 {
+    padding: 28px 67.5px 0px 67.5px;
+}
+
+.signature {
+    text-align: right;
+    margin: 40px 105px 29px 713px;
+}
+
+.btn {
+    background-color: #FF0000;
+    padding: 18px 43px;
+    margin: 66px 544.5px 82px 544.5px;
+    border-radius: 4px;
+}
