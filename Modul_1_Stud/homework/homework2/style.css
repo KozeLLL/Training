@@ -2,10 +2,11 @@
     padding: 0;
     margin: 0;
 }
-
 body {
     width: 1280px;
     background-color: #E5E5E5;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Work Sans', sans-serif;;
 }
 
 .header-nav {
@@ -16,6 +17,7 @@ body {
     display: flex;
     justify-content: space-around;
     list-style: none;
+    font-weight: bold;
 }
 
 a {
@@ -30,6 +32,7 @@ a {
 }
 .title {
     padding-top: 48px;
+    text-transform: uppercase;
 }
 
 .paragrapf-1 {
@@ -45,6 +48,7 @@ a {
 .signature {
     text-align: right;
     margin: 40px 105px 29px 713px;
+    font-weight: bold;
 }
 
 .btn {
@@ -52,4 +56,5 @@ a {
     padding: 18px 43px;
     margin: 66px 544.5px 82px 544.5px;
     border-radius: 4px;
+    color: #ffffff;
 }
