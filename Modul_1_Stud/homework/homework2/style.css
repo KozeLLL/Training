@@ -2,59 +2,99 @@
     padding: 0;
     margin: 0;
 }
+
 body {
-    width: 1280px;
     background-color: #E5E5E5;
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Work Sans', sans-serif;;
+}
+
+.header {
+    background-color: #ffffff;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .header-nav {
     padding: 26px;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .header-nav-list {
     display: flex;
-    justify-content: space-around;
     list-style: none;
     font-weight: bold;
 }
 
-a {
+.header-nav-list-item {
+    margin-left: 72px;
+}
+
+.header-nav-list-item:first-child {
+    margin-left: 0
+}
+
+.header-nav-list-item a{
+    font-weight: 700;
     text-decoration: none;
     color: #FF0000;
+    font-size: 18px;
+    letter-spacing: 3px;
 }
 
 .main {
     display: flex;
     flex-direction: column;
     text-align: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #ffffff;
 }
+
+.photo-preview {
+    display: block;
+    width: 100%;
+    height: calc(100vh - 71px);
+}
+
 .title {
     padding-top: 48px;
+    padding-bottom: 10px;
     text-transform: uppercase;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 4px;
 }
 
-.paragrapf-1 {
-    padding-top: 38px;
-    padding-right: 67.5px;
-    padding-bottom: 28px;
-    padding-left: 67.5px;
-}
-.paragrapf-2 {
-    padding: 28px 67.5px 0px 67.5px;
-}
-
-.signature {
-    text-align: right;
-    margin: 40px 105px 29px 713px;
-    font-weight: bold;
+.paragraph {
+    padding: 28px 68px 0 68px;
+    font-weight: 400;
+    color: #373737;
+    font-size: 16px;
+    letter-spacing: 2px;
 }
 
 .btn {
     background-color: #FF0000;
     padding: 18px 43px;
-    margin: 66px 544.5px 82px 544.5px;
+    margin: 66px 545px 82px 545px;
     border-radius: 4px;
     color: #ffffff;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.signature {
+    text-align: right;
+    padding: 0 105px 29px 0;
+    font-weight: bold;
+    background-color: #ffffff;
+    margin: 0 auto;
+    max-width: 1280px;
+    box-sizing: border-box;
+    letter-spacing: 3px;
 }
