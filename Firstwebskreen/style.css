@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+root {
+    --clr-primary: #4f4a7d;
+    --clr-dark: #146356;
+    --clr-light: #fff;
+    --clr-secondary: #C4C4C4;
+    --fw-normal: 400;
+    --fw-bold: 700;
+    --fw-black: 900;
+    --grid: 1fr;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.125rem;
+    color: var(--clr-primary);
+    line-height: 1.6;
+    background: var(--clr-light);
+}
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    padding: .5em 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background-color: #FFFFFFFF;
+    color: #4F4A7DFF;
+    border-radius: 10px;
+}
+.btn_primary:hover {
+    opacity: 0.9;
+}
+
+header {
+    background-color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+.logo {
+    margin-top: 1em;
+}
+.nav__list, .nav__list-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: var(--fw-bold);
+    color: #4f4a7d;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.camelCase {
+    background-color: #FFFFFFFF;
+    color: #4F4A7DFF;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.camelCase:hover {
+    opacity: 0.9;
+}
+.camelCase1 {
+    background-color: #4F4A7DFF;
+    color: #FFFFFFFF;
+    padding: 15px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.camelCase1:hover {
+    opacity: 0.9;
+}
+.main__main--green {
+    padding: 3em 1em;
+    background-image: url("../Firstwebskreen/img/ImageGreenWithLine.png"), url("../Firstwebskreen/img/ImagePurple.png");
+    background-position: left bottom, right top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 72%, 28%;
+    color: #fff;
+}
+@media (min-width: 500px) {
+    .main {
+        display: grid;
+        grid-template-columns: minmax(1em, 1fr) minmax(20rem, 50ch) minmax(1em, 1fr);
+        justify-items: start;
+    }
+    .main >* {
+        grid-column: 2 / 3;
+    }
+    .main__main--green {
+        background-position: left bottom, right bottom;
+    }
+}
+@media (min-width: 1200px) {
+    .main__main--green {
+        background-position: center left, center right;
+    }
+}
+.main-title {
+    line-height: 1;
+    font-weight: var(--fw-black);
+    font-size: 3rem;
+}
