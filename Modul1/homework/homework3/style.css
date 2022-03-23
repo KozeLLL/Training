@@ -120,6 +120,7 @@ aside {
 
 .nav-aside-list-item > a:first-letter {
     text-transform: uppercase;
+    transition: 0.3s all ease-in-out;
 }
 
 .nav-aside-list-item > a:hover {
