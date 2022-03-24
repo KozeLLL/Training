@@ -144,4 +144,30 @@ header {
     width: 100%;
     text-align: center;
 }
-
+.client-block {
+    background-image: url("../img/popular clients.jpeg");
+    background-position: center;
+    padding: 110px 0 190px 0;
+}
+.client-block-title {
+color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+.client-block-title:after {
+    content:"";
+    display: block;
+    background-color: #18B4CF;
+    width: 60px;
+    height: 3px;
+    margin: 90px auto 0 auto;
+}
+.client-block-list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 207px 135px 232px 141px;
+    column-gap: 60px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 110px;
+}
