@@ -76,7 +76,7 @@ header {
     height: 350px;
     background-size: cover;
     background-position: center;
-    background-image: url("../img/header-background.png");
+    background-image: url("img/header-background.png");
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -165,7 +165,7 @@ header {
 }
 
 .client-block {
-    background-image: url("../img/popular clients.jpeg");
+    background-image: url("img/popular clients.jpeg");
     background-position: center;
     padding: 110px 0 190px 0;
 }
