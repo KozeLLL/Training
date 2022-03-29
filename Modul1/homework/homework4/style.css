@@ -252,7 +252,10 @@ header {
     padding: 40px 24px 40px 0px;
     box-sizing: border-box;
 }
-
+.hot-news-list-items:first-child > img, .hot-news-list-items:last-child > img{
+    display: flex;
+    height: 100%;
+}
 .hot-news-list-items:nth-child(2) {
     margin-left: 35px;
     grid-column: 39/54;
