@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 22px;
+    display: inline-block;
+    margin: 18px 0 18px 79px;
+    transition: 0.5s ease-in-out;
+}
+
+.header-logo:hover {
+    color: #01813F;
+    cursor: pointer;
+}
+
+.header-btn-part {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.header-icon {
+    display: inline-block;
+    margin: 18px 25px 18px 0;
+}
+
+.header-icon-svg {
+    fill: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+.header-icon-svg:hover {
+    fill: #01813F;
+}
+
+.header-icon-last::after {
+    content: "";
+    width: 2px;
+    height: 23px;
+    background-color: #86898f;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 150px;
+}
+
+.header-btn-part > p {
+    display: inline-block;
+    margin: 22px 80px 22px 50px;
+    color: #fff;
+}
+
+.header-btn-part > p:first-letter {
+    text-transform: capitalize;
+}
+
+.login-btn, .signup-btn {
+    text-transform: capitalize;
+    border-radius: 0;
+    border: 0;
+    background: 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    transition: 0.5s ease-in-out;
+}
+
+
+.login-btn:hover {
+    color: #01813F;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    color: #01813F;
+    cursor: pointer;
+
+}
+
+.main {
+    background-image: url("./img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    max-width: 550px;
+    box-sizing: border-box;
+    padding: 31px 60px 38px 60px;
+}
+
+.form-input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-buttons {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: space-between;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-buttons-title {
+    display: block;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+}
+
+.form-buttons-title:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    background-color: #3CB878;
+    top: 3px;
+    left: -60px;
+}
+
+.form-login-btn {
+    /*margin: 33px 60px 13px 0;*/
+    text-transform: capitalize;
+    border: 0;
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    color: #3CB878;
+    transition: 0.3s ease-in-out;
+}
+
+.form-login-btn:hover {
+    color: #01813F;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.login-btn-facebook, .login-btn-google {
+    padding: 17px 22px 17px 0;
+    background-color: #305DB8;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    border: 0;
+    border-radius: 4px;
+    transition: 0.3s ease-in-out;
+}
+
+.login-btn-facebook {
+    margin-right: 4px;
+    position: relative;
+}
+.login-btn-facebook:after {
+    content: "";
+    width: 1px;
+    height: 28px;
+    background-color: #0A162F;
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 49px;
+    opacity: 0.1;
+    mix-blend-mode: normal;
+}
+
+.login-btn-facebook:hover {
+    background: #022263;
+    cursor: pointer;
+}
+
+.login-btn-google {
+    background-color: #DF4A32;
+    padding-right: 27px;
+    padding-left: 10px;
+    position: relative;
+}
+.login-btn-google:after {
+    content: "";
+    width: 1px;
+    height: 28px;
+    background-color: #0A162F;
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 49px;
+    opacity: 0.1;
+    mix-blend-mode: normal;
+}
+
+.login-btn-google:hover {
+    background: #AB1F09;
+    cursor: pointer;
+}
+
+.facebook-svg {
+    fill: white;
+    height: 24px;
+    width: 17px;
+    padding-right: 38px;
+    padding-left: 12px;
+    box-sizing: content-box;
+    position: relative;
+}
+
+.google-svg {
+    fill: white;
+    height: 24px;
+    width: 17px;
+    padding-right: 38px;
+    padding-left: 12px;
+    box-sizing: content-box;
+}
+
+.form-line {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #848484;
+    margin-bottom: 12px;
+    margin-top: 31px;
+    position: relative;
+}
+
+.form-line:before {
+    content: "";
+    position: absolute;
+    border: 1px solid #f2f2f2;
+    width: 147px;
+    top: 9px;
+    left: 0;
+}
+
+.form-line:after {
+    content: "";
+    position: absolute;
+    border: 1px solid #f2f2f2;
+    width: 147px;
+    top: 9px;
+    right: 0;
+}
+
+.form-input {
+    width: 322px;
+    padding: 15px 0 15px 20px;
+    margin-bottom: 15px;
+    color: #BEBEBE;
+    font-weight: 400;
+    font-size: 14px;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    transition: 0.5s linear;
+}
+
+.form-input:focus {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.21);
+    border: none;
+    outline: none;
+}
+
+.form-checkmark {
+    display: none;
+}
+
+.check-result {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.0001);
+    border: 1px solid #F2F2F2;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s linear;
+}
+
+.form-checkmark:checked ~ .check-result:before {
+    opacity: 1;
+    pointer-events: initial;
+}
+
+.form-checkbox {
+    position: relative;
+}
+
+.checkbox-svg {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 4px;
+}
+
+.form-checkmark:checked ~ .checkbox-svg {
+    opacity: 1;
+    pointer-events: initial;
+}
+
+.checkbox-info {
+    position: relative;
+    padding-left: 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.checkbox-title {
+    color: #3CB878;
+    transition: 0.3s ease-in-out;
+}
+
+.checkbox-title:hover {
+    color: #01813F;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.checkbox-cell {
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #F2F2F2;
+    cursor: pointer;
+}
+
+.form-input-create-account-btn {
+    margin-top: 20px;
+    margin-bottom: 36px;
+}
+
+.form-input-create-account-btn {
+    padding: 16px 99px;
+    background-color: #3CB878;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.form-input-create-account-btn:hover {
+    background-color: #01813F;
+    cursor: pointer;
+}
+
