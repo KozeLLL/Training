@@ -9,7 +9,9 @@
 
 .body {
     background-image: url("img/background 1.png");
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 img {
@@ -57,42 +59,36 @@ img {
 .header-logo-text {
     display: flex;
     flex-direction: column;
-    margin-left: 8px;
+    margin-left: 16px;
     position: relative;
-}
-
-.header-logo-text > a {
-    display: inline-block;
     color: #ffffff;
     text-transform: uppercase;
     transition: 0.5s linear;
-}
-
-.header-logo-text-first {
     font-weight: 700;
     font-size: 29px;
     line-height: 28px;
 }
 
-.header-logo-text-second {
+.header-logo-text-subtitle {
+    display: inline-block;
     font-weight: 700;
     font-size: 18px;
     padding-left: 1px;
 }
 
-.header-logo:hover .header-logo-text > a {
+.header-logo:hover .header-logo-text {
     color: #F26522;
 }
 
-.header-contacts > a {
+.header-logo-text-mail, .header-logo-text-phone {
     font-weight: 400;
     font-size: 18px;
     color: #fff;
     display: block;
-}
-
-.header-logo-text-mail, .header-logo-text-phone {
     transition: 0.5s linear;
+}
+.header-logo-text-phone {
+    margin-top: 19px;
 }
 
 .header-logo-text-mail:hover, .header-logo-text-phone:hover {
@@ -107,7 +103,7 @@ img {
 .list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 80px;
+    row-gap: 37px;
     column-gap: 60px;
 }
 
@@ -118,7 +114,6 @@ img {
 }
 
 .list-item-box {
-    box-sizing: border-box;
     position: relative;
     overflow: hidden;
 }
@@ -135,9 +130,6 @@ img {
     justify-content: space-between;
 }
 
-.list-item-text_price > p {
-    display: inline-block;
-}
 
 .list-item-text_price {
     display: flex;
@@ -145,16 +137,20 @@ img {
     padding-left: 12px;
 }
 
-.list-item-text_price > p:first-child {
+.list-item-text_price > span {
+    display: inline-block;
+    color: white;
     font-size: 10px;
     font-weight: 400;
     padding-top: 7px;
     padding-bottom: 5px;
 }
 
-.list-item-text_price > p:last-child {
+
+.list-item-text_price > span:last-child {
     font-size: 20px;
     font-weight: 400;
+    padding: 0;
 }
 
 .list-item-text-view_details-link {
@@ -165,6 +161,10 @@ img {
     font-size: 14px;
     align-items: center;
 
+}
+
+.list-item-text-view_details-link > svg {
+    margin-left: 16px;
 }
 
 .list-item-title {
@@ -182,9 +182,7 @@ img {
 .list-items:hover .list-item-title {
     color: #F26522;
 }
-.list-item-text-view_details-link > svg {
-    margin-left: 16px;
-}
+
 .footer-item {
     text-align: center;
     font-size: 12px;
