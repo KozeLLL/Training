@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.lists{
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+    width: 1200px;
+}
+.lists__item {
+    width: 20%;
+    background: aquamarine;
+    height: 200px;
+    transition: 0.2s linear background-color;
+}
+.lists__item--active{
+    background: #fa3;
+}
+
