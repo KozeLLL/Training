@@ -29,5 +29,4 @@ const createNewUser = function () {
 const user = new createNewUser()
 console.log(user);
 
-// Комментарии: не потрібно прибігати в даному разі до iife
-// звертайтеся до імені та прізвища як до властивостей об'єкта, а не до змінних
+
