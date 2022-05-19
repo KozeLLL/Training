@@ -67,7 +67,7 @@
 }
 
 .hero-aperture {
-    background-image: url("../img/backgroung_img_aperture.png");
+    background-image: url("img/backgroung_img_aperture.png");
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -180,19 +180,19 @@
 }
 
 .hero-gallery-list-item:nth-child(1) {
-    background-image: url("../img/gallery_img1.png");
+    background-image: url("img/gallery_img1.png");
 }
 
 .hero-gallery-list-item:nth-child(2) {
-    background-image: url("../img/gallery_img2.png");
+    background-image: url("img/gallery_img2.png");
 }
 
 .hero-gallery-list-item:nth-child(3) {
-    background-image: url("../img/gallery_img3.png");
+    background-image: url("img/gallery_img3.png");
 }
 
 .hero-gallery-list-item:nth-child(4) {
-    background-image: url("../img/gallery_img4.png");
+    background-image: url("img/gallery_img4.png");
 }
 
 .gallery-item-name {
@@ -229,7 +229,7 @@
 }
 
 .hero-sunset {
-    background-image: url("../img/background_sunset.png");
+    background-image: url("img/background_sunset.png");
     background-size: cover;
     background-position: center;
     min-height: 74vh;
@@ -273,7 +273,7 @@
 }
 
 .tools-image-block {
-    background-image: url("../img/hero_tools_image_right_part.png");
+    background-image: url("img/hero_tools_image_right_part.png");
     background-size: cover;
     background-position: center;
     min-height: 70vh;
@@ -281,7 +281,7 @@
 }
 
 .hero-monstera {
-    background-image: url("../img/background_monstera.png");
+    background-image: url("img/background_monstera.png");
     background-size: cover;
     background-position: center;
     min-height: 74vh;
@@ -330,7 +330,7 @@
 }
 
 .hero-starfall {
-    background-image: url("../img/background_starfall.png");
+    background-image: url("img/background_starfall.png");
     background-size: cover;
     background-position: center;
     min-height: 74vh;
