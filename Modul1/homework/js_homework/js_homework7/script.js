@@ -1,7 +1,7 @@
 // Теоретичні питання
-//     Опишіть своїми словами як працює метод forEach.
-//     Як очистити масив?
-//     Як можна перевірити, що та чи інша змінна є масивом?
+//     Опишіть своїми словами як працює метод forEach. запускає функцію для кожного елементу масиву
+//     Як очистити масив? - arr.splice(0, arr.length)
+//     Як можна перевірити, що та чи інша змінна є масивом? - isArray
 //
 //     Завдання
 //     Реалізувати функцію фільтру масиву за вказаним типом даних. Завдання має бути виконане на чистому Javascript без використання бібліотек типу jQuery або React.
@@ -18,17 +18,5 @@ const filterBy = (array, type) => {
 }
 
 console.log(filterBy(filteredArray, "string"));
-//
-// const plusOne = (array) => {
-//     return array.map((item)=>item + 1)
-// }
-// console.log(plusOne(filteredArray));
-//
-// console.log(filteredArray);
-// const forEachArray = (array) => {
-//     return array.forEach((item) => item + 1)
-// }
-// console.log(forEachArray(filteredArray))
-// console.log(filteredArray);
 
 console.log(filteredArray.includes(23))
