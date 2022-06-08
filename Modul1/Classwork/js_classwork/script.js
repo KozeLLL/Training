@@ -366,21 +366,249 @@
  * «Ваш «НАЗВАНИЕ НАПИТКА» готов. Спасибо за сумму без сдачи! :)"
  */
 
-const coffeMachine = () => {
-    const coffeCost = 25;
-    const capuccinoCost = 50;
-    const teaCost = 10;
+// const coffeMachine = () => {
+//     const coffeCost = 25;
+//     const capuccinoCost = 50;
+//     const teaCost = 10;
+//
+//     let payLoad = Number(prompt("Внесите деняк"))
+//     let drinkChoise = prompt("Выберите напиток: кофе капучино или чай")
+//
+//     if(drinkChoise === "coffe") {
+//         if(payLoad === coffeCost) {
+//             console.log(`Ваш ${drinkChoise} готов. Спасибо за сумму без здачи!`)
+//         } else if (payLoad < coffeCost) {
+//             console.log("Денег недостаточно")
+//         } else {
+//             console.log(`Ваш ${drinkChoise} готов, ваша здача.`)
+//         }
+//     }
+// }
 
-    let payLoad = Number(prompt("Внесите деняк"))
-    let drinkChoise = prompt("Выберите напиток: кофе капучино или чай")
 
-    if(drinkChoise === "coffe") {
-        if(payLoad === coffeCost) {
-            console.log(`Ваш ${drinkChoise} готов. Спасибо за сумму без здачи!`)
-        } else if (payLoad < coffeCost) {
-            console.log("Денег недостаточно")
-        } else {
-            console.log(`Ваш ${drinkChoise} готов, ваша здача.`)
-        }
-    }
-}
+/**
+ * Задание 1.
+ * Написать программу для расчета индекса массы тела.
+ *
+ * Спросить у пользователя его имя, его рост в метрах (1.83 например) и его вес.
+ * Проверить на то, что это числа, спрашивать до тех пор пока не введет корректно.
+ *
+ * Высчитав ИМТ, сгенерировать совет. (https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B5%D0%BA%D1%81_%D0%BC%D0%B0%D1%81%D1%81%D1%8B_%D1%82%D0%B5%D0%BB%D0%B0)
+ * 16 и менее - 'У вас выраженный дефицит массы тела. Пожалуйста, обратитесь к специалистам'
+ * 16—18,5 - 'Недостаточная масса тела. Советуем обратить внимание на питание'
+ * 18,5—25 - 'У вас нормальный ИМТ. Так держать'
+ * 25—30 - 'У вас избыточная масса тела. Советуем обратить внимание на питание'
+ * Больше 30 - 'У вас ожирение. Пожалуйста, обратитесь к специалистам'
+ * Если получено значение, что не лежит в диапазоне от 12 и до 50 - 'Какие-то данные некорректные, проверьре введеные данные'
+ * Вывести в модальном окне - "Ваш ИМТ ${полученное значение} ${совет}"
+ *
+ */
+// 'У вас выраженный дефицит массы тела. Пожалуйста, обратитесь к специалистам'
+// 'Недостаточная масса тела. Советуем обратить внимание на питание'
+// 'У вас нормальный ИМТ. Так держать'
+// 'У вас избыточная масса тела. Советуем обратить внимание на питание'
+// 'У вас ожирение. Пожалуйста, обратитесь к специалистам'
+
+// const calculateBodyMassIndex = () => {
+//     let userName = prompt("what is your name?")
+//     while (!Boolean(userName) || userName.length < 2 || !isNaN(Number(userName))) {
+//         userName = prompt("Your name is incorrect. what is your real name?")
+//     }
+//     let userHeight = parseFloat(prompt("what is your height?"))
+//     while (!Boolean(userHeight) || isNaN(userHeight)) {
+//         userHeight = parseFloat(prompt("what is your height?"))
+//     }
+//     let userWeight = parseFloat(prompt("what is your weight?"))
+//     while (!Boolean(userWeight) || isNaN(userWeight)) {
+//         userWeight = parseFloat(prompt("what is your weight?"))
+//     }
+//     let indexBMI = userWeight/userHeight**2;
+//     let indexAdvice = null;
+//     if (indexBMI < 12 || indexBMI > 50) {
+//         alert("Какие-то данные некорректные, проверьре введеные данные")
+//     } else if (indexBMI <= 16) {
+//         indexAdvice = 'У вас выраженный дефицит массы тела. Пожалуйста, обратитесь к специалистам';
+//     } else if (indexBMI >16 && indexBMI <= 18.5){
+//         indexAdvice = 'Недостаточная масса тела. Советуем обратить внимание на питание'
+//     } else if (indexBMI >18.5 && indexBMI <= 25){
+//         indexAdvice = 'У вас нормальный ИМТ. Так держать'
+//     } else if (indexBMI >25 && indexBMI <= 30) {
+//         indexAdvice = 'У вас избыточная масса тела. Советуем обратить внимание на питание'
+//     } else {
+//         indexAdvice = 'У вас ожирение. Пожалуйста, обратитесь к специалистам'
+//     }
+//     alert(`${userName}, ваш ИМТ ${indexBMI.toFixed(2)} ${indexAdvice}`)
+// }
+// calculateBodyMassIndex()
+
+// Задача 2
+//
+// Дана переменная со значением '5.5px' и переменная со значением '6.25px'. Найдите сумму пикселей из значений этих переменных и выведите ее на экран.
+//
+//     Задача 3
+//
+// Модифицируйте предыдущую задачу так, чтобы к выводящемуся результату добавлялись буквы 'px'. То есть, если наша сумма равна 11.75, то на экран пусть выведется '11.75px'.
+//
+// const calculate = () => {
+//     let num1 = "5.5px"
+//     let num2 = "6.25px"
+//     let summ = parseFloat(num1) + parseFloat(num2)
+//     console.log(`Сумма чисел ${num1} и ${num1} равна ${summ}px.`)
+// }
+// calculate()
+
+// Создайте объект user с ключами name, surname, patronymic и какими-то произвольными значениями. Выведите на экран фамилию, имя и отчество через пробел.
+
+// const user = {
+//     name: 'Roman',
+//     surname: 'Karasevich',
+//     patronimic: 'random property'
+// }
+// console.log(user);
+// console.log(`lsdkjfhklsdj ${user.name} ${user.surname} ${user.patronimic}`)
+//
+// // Создайте объект date с ключами year, month и day и значениями, соответствующими текущему дню. Выведите созданную дату на экран в формате год-месяц-день.
+//
+// const date = {
+//     year: 1997,
+//     month: 'july',
+//     day: 'monday'
+// }
+// console.log(`${date.year}-${date.month}-${date.day}`)
+// 9
+
+
+/**
+ * Задача 1.
+ *
+ *
+ * Улучшить функцию-исследователь навыков разработчика из предыдущего задания.
+ *
+ * После ведения пользователем своих навыков функция выводит их на экран посредством функции alert.
+ * После чего спрашивает правильно-ли пользователь ввёл данные о своих навыках.
+ *
+ * --- Если пользователь ответил «нет» ---
+ * Программа спрашивает его какие навыки необходимо удалить из списка.
+ * Если пользователь ввёл навык для удаления из списка, которого в списке не существует, программа
+ * оповещает пользователя об ошибке и повторно запрашивает данные.
+ *
+ * Программа запрашивает данные о навыках для удаления из списка до тех пор,
+ * пока пользователь не кликнет по кнопке «Отменить» в диалоговом окне.
+ *
+ * --- Если пользователь ответил «да» ---
+ * Программа выводит данные о навыках в консоль.
+ */
+
+
+// const developerSkillInspector = () => {
+//     const skillsArray = [];
+//     let skills = null;
+//
+//     while (skills !== null || skillsArray.length === 0) {
+//         skills = prompt("Enter your skills:");
+//
+//         if (skills !== '' && skills !== null && skills.length > 2) {
+//             skillsArray.push(skills)
+//         }
+//     }
+//
+//     alert(`Ваши скиллы: ${skillsArray}`);
+//     let isSkillCorrect = confirm(`Данные введены верно?`);
+//     if (!isSkillCorrect) {
+//         let skillRemove = prompt(`Какие навыки нужно удалить? Ваши скиллы: ${skillsArray}`);
+//         if (!skillsArray.includes(skillRemove)) {
+//             skillRemove = prompt(`Такого навыка в списке нет. Попробуйте ещё раз. Доступные навыки для удаления: ${skillsArray}`)
+//         }
+//         // const updateSkillsArray = skillsArray.reduce((array, item) => {
+//         //     if (item !== skillRemove) {
+//         //         array.push(item);
+//         //     }
+//         //     return array;
+//         // }, []);
+//         // var, var1, var2, var3
+//         const updateSkillsArray = skillsArray.filter(item => item !== skillRemove)
+//         alert(`Ваши скиллы обновленные: ${updateSkillsArray}`)
+//     }
+//     alert(`Ваши скиллы: ${skillsArray}`)
+// }
+//
+// developerSkillInspector()
+
+/* Задача 1
+Выведите в консоль числа от 1 до 100. */
+
+// let i = 1;
+// console.log(i);
+// while(i < 100) {
+//     i++;
+//     console.log(i);
+// }
+
+/**Задача 3⋕js.Pm.Lp.Wl.3
+
+Выведите в консоль четные числа в промежутке от 0 до 100.*/
+
+// let i = 0;
+// while(i<=100){
+//     console.log(i);
+//     i+=2;
+// }
+// Задача 1⋕js.Pm.Lp.AFr.1
+//
+// Дан массив с элементами 'a', 'b', 'c', 'd', 'e'. С помощью цикла for выведите все эти элементы на экран.
+//
+// let arr = ['a', 'b', 'c', 'd', 'e']
+// for(let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+// Задача 2⋕js.Pm.Lp.AFr.2
+//
+// В следующем коде программист вывел в консоль все элементы массива:
+//
+//     let arr = [1, 2, 3, 4, 5];
+//
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+// Задача 3⋕js.Pm.Lp.AFr.3
+//
+// Дан массив с элементами 1, 2, 3, 4, 5. С помощью цикла for и оператора if выведите в консоль нечетные элементы массива.
+
+// let arr = [1, 2, 3, 4, 5];
+//
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 !== 0) {
+//         console.log(arr[i]);
+//     }
+// }
+// Задача 1⋕js.Pm.Lp.FO.1
+//
+// Дан массив с элементами 'a', 'b', 'c', 'd', 'e'. С помощью цикла for-of выведите все эти элементы на экран.
+
+// const arr = ['a', 'b', 'c', 'd', 'e'];
+//
+// for (let element of arr) {
+//     console.log(element);
+// }
+
+/**Задача 2⋕js.Pm.Lp.FO.2
+//
+// Дан массив с элементами 1, 2, 3, 4, 5. С помощью цикла for-of найдите сумму элементов этого массива.*/
+
+// const arr = [1, 2, 3, 4, 5];
+// let summ = 0;
+// for (let element of arr) {
+//     // const summArr = () => {
+//     //     let result = 0;
+//     //     for (let i = 0; i < arr.length; i++)
+//     //         result += arr[i]
+//     //     console.log(result);
+//     // }
+//     // summArr()
+//     console.log(element);
+//     summ = summ + element;
+//
+// }
+// console.log(summ);
+
+

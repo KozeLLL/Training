@@ -13,10 +13,11 @@
 // Додати в об'єкт newUser метод getLogin(), який повертатиме першу літеру імені юзера, з'єднану з прізвищем, все в нижньому регістрі (наприклад, Ivan Kravchenko → ikravchenko).
 // Створити юзера за допомогою функції createNewUser(). Викликати у цього юзера функцію getLogin(). Вивести у консоль результат виконання функції.
 
-let name = prompt("What is your name?")
-let surname = prompt("What is your surname?")
+
 
 const createNewUser = function () {
+    let name = prompt("What is your name?")
+    let surname = prompt("What is your surname?")
     return {
         firstName: name,
         lastName: surname,
