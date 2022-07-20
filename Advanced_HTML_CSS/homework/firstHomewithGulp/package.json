@@ -1,0 +1,23 @@
+{
+  "name": "project-x",
+  "version": "1.0.0",
+  "description": "Roman Karasevych, fe2 online",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linyvyiVarenyk/Training"
+  },
+  "author": "rk",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "browser-sync": "^2.27.10",
+    "eslint": "^8.20.0",
+    "gulp": "^4.0.2",
+    "moment": "^2.29.4"
+  }
+}
