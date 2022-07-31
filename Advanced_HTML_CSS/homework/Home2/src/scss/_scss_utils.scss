@@ -1,0 +1,32 @@
+//variables
+$normalFontSize:14px;
+
+//mixin-media
+@mixin screenFrom($min, $max) {
+  @media (max-width: $max) and (min-width: $min) {
+    @content
+  }
+}
+@mixin screenFullSize() {
+  @media (min-width: 1200px) {
+    @content
+  }
+}
+
+@mixin screenTabletToFullSize {
+  @media (min-width: 768px) {
+    @content
+  }
+}
+
+//mixin-media simple position
+
+@mixin tabletCenter {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+@mixin fullSizeCenter {
+  max-width: 1170px;
+  margin: 0 auto;
+}

@@ -1,0 +1,105 @@
+@import "scss_utils";
+
+.instagram-shot_container {
+  padding: 38px 47px 42px 25px;
+
+  @include screenFrom(768px, 1200px) {
+    background-color: #F7F7F7;
+  }
+  @include screenFullSize {
+    background-color: #f7f7f7;
+  }
+}
+
+.instagram-shot--title__container {
+  @include screenFrom(768px, 1200px) {
+    display: flex;
+    justify-content: space-between;
+
+    @include tabletCenter
+  }
+  @include screenFullSize {
+    display: flex;
+    justify-content: space-between;
+
+    @include fullSizeCenter
+  }
+}
+
+.instagram-shot__title {
+  font-weight: 700;
+  font-size: $normalFontSize;
+  line-height: 22px;
+  color: rgba(78, 78, 78, 1);
+  text-transform: uppercase;
+
+  @include screenFrom(768px, 1200px) {
+    font-size: 16px;
+  }
+  @include screenFullSize {
+    font-size: 16px;
+  }
+}
+
+
+.instagram_link {
+  display: none;
+
+  @include screenFrom(768px, 1200px) {
+    display: block;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 22px;
+    color: rgba(78, 78, 78, 1);
+    text-transform: uppercase;
+  }
+  @include screenFullSize {
+    display: block;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 22px;
+    color: rgba(78, 78, 78, 1);
+    text-transform: uppercase;
+  }
+}
+
+.img-gallery__container {
+  padding-top: 13px;
+
+  @include screenFrom(768px, 1200px) {
+    padding-top: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+
+    @include tabletCenter
+  }
+  @include screenFullSize{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+
+    @include fullSizeCenter
+  }
+}
+
+
+.img__container {
+  & img {
+    width: 100%;
+  }
+
+  &:not(:first-child) {
+    display: none;
+
+    @include screenFrom(768px, 1200px) {
+      display: block;
+      &:last-child {
+        display: none;
+      }
+    }
+    @include screenFullSize{
+      display: block;
+    }
+  }
+}

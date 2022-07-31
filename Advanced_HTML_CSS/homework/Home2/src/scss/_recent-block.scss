@@ -1,0 +1,106 @@
+@import "scss_utils";
+.recent-container {
+  padding: 0 28px 40px;
+
+
+  & .recent--header {
+    color: rgba(78, 78, 78, 1);
+    font-weight: 700;
+    font-size: $normalFontSize;
+    line-height: 22px;
+    text-transform: uppercase;
+    padding-bottom: 23px;
+    @include screenFrom(768px, 1200px) {
+      @include tabletCenter
+    }
+    @include screenFullSize {
+      @include fullSizeCenter
+    }
+  }
+}
+
+.recent_section-container {
+  @include screenFrom(768px, 1200px) {
+    @include tabletCenter
+  }
+  @include screenFullSize {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 25px;
+    column-gap: 30px;
+
+    @include fullSizeCenter
+  }
+
+}
+
+.post--title {
+  color: rgba(78, 78, 78, 1);
+  font-weight: 700;
+  font-size: $normalFontSize;
+  line-height: 30px;
+  @include screenFrom(768px, 1200px) {
+    font-size: 16px;
+  }
+  @include screenFullSize {
+    font-size: 16px;
+  }
+}
+
+.post--title__info {
+  color: rgba(124, 124, 124, 1);
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 20px;
+  @include screenFrom(768px, 1200px) {
+    font-size: 12px;
+  }
+  @include screenFullSize {
+    font-size: 12px;
+  }
+}
+
+.recent--commentary {
+  @include screenFrom(768px, 1200px) {
+    padding-top: 13px;
+  }
+}
+
+.recent--commentary p {
+  display: none;
+  @include screenFrom(768px, 1200px) {
+    display: inline;
+    font-weight: 400;
+    font-size: $normalFontSize;
+    line-height: 26px;
+  }
+  @include screenFullSize {
+    display: inline;
+    font-weight: 400;
+    font-size: $normalFontSize;
+    line-height: 26px
+  }
+}
+
+.text-container {
+  @include screenTabletToFullSize {
+    padding-left: 21px;
+
+  }
+}
+
+.post--container {
+  padding-bottom: 29px;
+  @include screenTabletToFullSize {
+    display: flex;
+
+  }
+}
+
+.post--container:last-child {
+  display: none;
+
+  @include screenTabletToFullSize {
+    display: flex;
+  }
+}
