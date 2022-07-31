@@ -41,6 +41,9 @@
 
   &-hide {
     display: none;
+    @include screenTabletToFullSize {
+      display: block;
+    }
   }
   @include screenFrom(768px, 1200px) {
     position: initial;
