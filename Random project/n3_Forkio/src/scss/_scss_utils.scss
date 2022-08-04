@@ -1,25 +1,30 @@
 // mixin
 
-@mixin screenMobile($min, $max) {
+@mixin screenMobile {
   @media (min-width: 320px) and (max-width: 480px) {
     @content
   }
 }
-@mixin screenTablet($min, $max) {
+
+@mixin screenTablet {
   @media (min-width: 481px) and (max-width: 992px) {
     @content
   }
 }
-@mixin screenFullSize($min, $max) {
+
+@mixin screenLaptopSize {
   @media (min-width: 993px) and (max-width: 1200px) {
     @content
   }
 }
-@mixin screenContainer($max) {
-  @media (max-width: 1200px) {
+
+@mixin screenFullSize {
+  @media (min-width: 1200px) {
     @content
   }
 }
-@mixin contentCenter {
+
+@mixin contentCenter($width){
   margin: 0 auto;
+  max-width: $width;
 }

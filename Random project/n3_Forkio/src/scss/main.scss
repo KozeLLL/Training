@@ -1,2 +1,14 @@
-@import "src/scss/_test.scss";
+@import "src/scss/scss_utils";
 
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+}
+body {
+  min-width: 320px;
+}
+.header {
+  background-color: green;
+}
