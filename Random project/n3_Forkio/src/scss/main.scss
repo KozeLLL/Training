@@ -1,4 +1,5 @@
-@import "src/scss/scss_utils";
+@import "./reset.scss";
+@import "./scss_utils";
 
 * {
   margin: 0;
@@ -8,7 +9,4 @@
 }
 body {
   min-width: 320px;
-}
-.header {
-  background-color: green;
 }
