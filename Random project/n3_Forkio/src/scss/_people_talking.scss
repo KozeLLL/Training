@@ -1,0 +1,104 @@
+.container_people-talking {
+  padding: 60px 25px 30px;
+  background: url("/img/background-what_people_talking.png") no-repeat center;
+  background-size: cover;
+  @include screenTablet {
+    padding: 90px 28px 20px;
+  }
+  @include screenFromTabletToFullSize(993px) {
+    padding: 110px 80px 20px;
+    @include contentCenter(1200px)
+  }
+}
+
+.title_people-talking {
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  @include screenTablet {
+    font-size: 42px;
+    line-height: 44px;
+  }
+  @include screenFromTabletToFullSize(993px) {
+    font-size: 48px;
+    line-height: 50px;
+  }
+}
+
+.container-clients {
+  padding: 50px 0 37px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 45px;
+  align-items: center;
+  @include screenTablet {
+    padding: 90px 0 70px;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    display: grid;
+    align-items: baseline;
+  }
+  @include screenFromTabletToFullSize(993px) {
+    padding: 82px 0 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 87px;
+    column-gap: 120px;
+  }
+}
+
+.container-clients_block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  @include screenTablet {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 33px;
+  }
+  @include screenFromTabletToFullSize(993px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 33px;
+  }
+}
+
+.clients_block_description {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 24px;
+  color: #fff;
+}
+.comment_people-talking {
+  color: #A291A5;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  position: relative;
+}
+.comment_people-talking:after {
+  content: "";
+  width: 245px;
+  height: 2px;
+  background-color: #645766;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -22px;
+  @include screenTablet {
+    width: 555px;
+    bottom: -13px;
+  }
+  @include screenFromTabletToFullSize(993px) {
+  width: 780px;
+  bottom: -19px;
+  }
+}

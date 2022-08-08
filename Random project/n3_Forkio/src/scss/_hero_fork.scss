@@ -1,0 +1,136 @@
+.hero {
+  background-size: cover;
+  height: calc(100vh - 103px - 75px);
+  background: url("/img/hero_background.png") no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 12;
+  @include screenTablet {
+    height: calc(100vh - 103px - 110px);
+  }
+  @include screenFromTabletToFullSize(993px) {
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 103px - -45px);
+    @include contentCenter(1200px)
+  }
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 15px 0;
+  @include screenTablet {
+    padding: 70px 15px 0;
+  }
+  @include screenFromTabletToFullSize(993px) {
+    padding: 183px 15px 0;
+  }
+
+  & .title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #fff;
+    @include screenTablet {
+      font-size: 72px;
+      line-height: 72px;
+    }
+    @include screenFromTabletToFullSize(993px) {
+      font-size: 82px;
+      line-height: 82px;
+    }
+
+    & .title--main {
+      padding-bottom: 20px;
+    }
+  }
+
+  & .hero__container__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #8D81AC;
+    text-align: center;
+    padding-bottom: 14px;
+    @include screenTablet {
+      font-size: 24px;
+      line-height: 24px;
+    }
+    @include screenFromTabletToFullSize(993px) {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+
+  & .hero__container__version {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #848E97;
+  }
+}
+
+.hero__download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translate(-50%);
+  min-width: 290px;
+  @include screenTablet {
+    min-width: 390px;
+    bottom: -62px;
+  }
+  @include screenFromTabletToFullSize(993px) {
+    min-width: 390px;
+    bottom: -62px;
+  }
+
+  & .link {
+    background-color: rgba(141, 129, 172, 1);
+    border-radius: 40px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    transition: all ease-in-out 0.3s;
+
+    &--big {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 20px;
+      padding: 10px 29px;
+      @include screenTablet {
+        font-size: 21px;
+        line-height: 23px;
+        padding: 23px 61px;
+      }
+      @include screenFromTabletToFullSize(993px) {
+        font-size: 21px;
+        line-height: 23px;
+        padding: 23px 61px;
+        &:hover {
+          background-color: #fff;
+          color: #8D81AC;
+        }
+      }
+    }
+  }
+
+  & .hero__download__comment {
+    color: #848E97;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    padding-top: 12px;
+    @include screenTablet {
+      padding-top: 18px;
+    }
+  }
+}
