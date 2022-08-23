@@ -7,7 +7,12 @@
   }
   @include screenFromTabletToFullSize(993px) {
     padding: 110px 80px 20px;
-    @include contentCenter(1200px)
+  }
+
+  &__container{
+    @include screenFromTabletToFullSize(993px){
+      @include contentCenter(1200px)
+    }
   }
 }
 

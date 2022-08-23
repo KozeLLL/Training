@@ -15,7 +15,6 @@
     background-size: cover;
     background-position: center;
     height: calc(100vh - 103px - -45px);
-    @include contentCenter(1200px)
   }
 }
 
