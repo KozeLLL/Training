@@ -1,5 +1,8 @@
 @import "./reset.scss";
 @import "./scss_utils";
+@import "./revolutionary_editor";
+@import "./what_you_get";
+@import "./pricing";
 
 * {
   margin: 0;
@@ -7,6 +10,9 @@
   list-style: none;
   border: none;
 }
+
 body {
   min-width: 320px;
+  margin: 0 auto;
+  overflow-x: hidden;
 }

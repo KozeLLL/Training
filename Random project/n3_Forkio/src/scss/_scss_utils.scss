@@ -6,11 +6,15 @@
   }
 }
 
+;
+
 @mixin screenTablet {
   @media (min-width: 481px) and (max-width: 992px) {
     @content
   }
 }
+
+;
 
 @mixin screenLaptopSize {
   @media (min-width: 993px) and (max-width: 1200px) {
@@ -18,13 +22,21 @@
   }
 }
 
+;
+
 @mixin screenFullSize {
   @media (min-width: 1200px) {
     @content
   }
 }
 
-@mixin contentCenter($width){
+;
+
+@mixin contentCenter($width) {
   margin: 0 auto;
   max-width: $width;
 }
+
+;
+
+$mainPadding: 0 10px;

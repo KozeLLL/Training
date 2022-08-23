@@ -1,0 +1,126 @@
+.revolutionary {
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1200px;
+    padding: $mainPadding;
+
+    &__title {
+        text-transform: uppercase;
+        color: #635C73;
+        font-weight: 700;
+
+        @include screenMobile {
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 28px;
+            padding: 130px 10% 27px;
+        }
+
+        @include screenTablet {
+            font-size: 42px;
+            line-height: 42px;
+            padding: 140px 10% 33px;
+        }
+
+        @include screenLaptopSize {
+            font-weight: 700;
+            font-size: 54px;
+            line-height: 54px;
+            padding: 129px 10% 35px;
+
+        }
+
+        @include screenFullSize {
+            font-weight: 700;
+            font-size: 54px;
+            line-height: 54px;
+            padding: 129px 10% 35px;
+
+        }
+
+
+
+        ;
+    }
+
+    &__text {
+        color: #323232;
+        padding: 0 5.8%;
+
+
+        @include screenMobile {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        @include screenTablet {
+            font-weight: 400;
+            font-size: 21px;
+            line-height: 32px;
+        }
+
+        @include screenLaptopSize {
+            font-weight: 400;
+            font-size: 21px;
+            line-height: 32px;
+        }
+
+        @include screenFullSize {
+            font-weight: 400;
+            font-size: 21px;
+            line-height: 32px;
+        }
+    }
+
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 320px;
+        margin: 0 auto;
+
+        .container {
+            margin: 0 auto;
+            display: flex;
+            padding-top: 36px;
+            padding-bottom: 120px;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        width: 60px;
+        height: 28px;
+        font-size: 12px;
+        line-height: 20px;
+        border-radius: 5px;
+        border: 1px solid;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        background-color: #F0F0F0;
+        font-weight: 700;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+
+        &-title {
+            padding-right: 3px;
+        }
+    }
+
+    &__buttons-stat {
+        background-color: #fff;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: flex;
+        align-items: center;
+        border: 1px solid;
+        border-left: none;
+        font-size: 12px;
+        padding: 0 5px;
+    }
+
+
+}
