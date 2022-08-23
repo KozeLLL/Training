@@ -1,27 +1,37 @@
+
 <header class="header">
-    <div class="header__logo">
+    <a class="header__logo">
         <div class="header__logo__icon">
             <img src="./img/logo_mobile.png" alt="logo">
         </div>
         <div class="header__logo__icon-hover">
             <img src="./img/logo-hover.png" alt="">
         </div>
-    </div>
-    <div class="header__button-buy">
-        <input type="button" class="header__button-buy__btn" value="Buy Now">
-    </div>
+        <p class="header__logo__text">ForkIO</p>
+    </a>
+    <a href="#" class="header__button">Buy Now</a>
     <div class="header__nav-button">
-        <div class="nav-button__closed">
+        <div class="nav-button">
+            <svg width="26" height="21" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="18" width="26" height="3" rx="1.5" fill="white"/>
+                <rect y="9" width="26" height="3" rx="1.5" fill="white"/>
+                <rect x="11" width="15" height="3" rx="1.5" fill="white"/>
+            </svg>
         </div>
-        <div class="nav-button__open">
+        <div class="nav-button nav-button--hide">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 23L24 1" stroke="white" stroke-width="2"/>
+                <path d="M1 1L23.5 24" stroke="white" stroke-width="2"/>
+            </svg>
         </div>
     </div>
-    <nav class="nav">
+    <nav class="nav nav-hide">
         <ul class="nav__list">
-            <li class="nav__list__item"></li>
-            <li class="nav__list__item"></li>
-            <li class="nav__list__item"></li>
-            <li class="nav__list__item"></li>
+            <li class="nav__list__item"><a href="#">Overview</a></li>
+            <li class="nav__list__item"><a href="#">About Fork</a></li>
+            <li class="nav__list__item"><a href="#">Buying Options</a></li>
+            <li class="nav__list__item"><a href="#">Support</a></li>
         </ul>
     </nav>
 </header>
+

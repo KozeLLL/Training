@@ -1,0 +1,1 @@
+const btnMenu=document.querySelectorAll(".nav-button"),navBtnMenu=document.querySelector(".header__nav-button"),navMenu=document.querySelector(".nav-hide");navBtnMenu.addEventListener("click",e=>{console.log(e),e.preventDefault(),btnMenu.forEach(e=>{e.classList.toggle("nav-button--hide")}),navMenu.classList.toggle("nav-show")});

@@ -29,6 +29,11 @@
     @content
   }
 }
+@mixin screenFromTabletToFullSize($width) {
+  @media (min-width: $width) {
+    @content
+  }
+}
 
 ;
 
