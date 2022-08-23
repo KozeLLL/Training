@@ -1,0 +1,158 @@
+$base-color: #5F5161;
+$title-color: #685B6A;
+$button-color: #776B79;
+
+.pricing {
+    text-align: center;
+    padding: $mainPadding;
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 1200px;
+        margin: 0 auto;
+        align-items: center;
+
+
+        @include screenTablet {
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @include screenLaptopSize {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @include screenFullSize {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .modified {
+            transform: scale(1.16);
+            background-color: #47324A;
+            z-index: 1;
+
+            .pricing__block--title {
+                background-color: #3F2D42;
+            }
+
+            .pricing__block--price {
+                background-color: #47324A;
+            }
+
+            .pricing__block--period {
+                background-color: #47324A;
+            }
+
+            .pricing__block--line {
+                background-color: #47324A;
+            }
+        }
+
+    }
+
+
+    @include screenMobile {
+        margin-bottom: 18px;
+    }
+
+    background: url(../img/Fork/background_fork.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+        &__title {
+        margin: 0px 60px;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 42px;
+        padding-top: 23px;
+        position: relative;
+        padding: 88px 61px;
+
+        @include screenTablet {
+            font-size: 42px;
+line-height: 44px;
+        }
+
+        @include screenLaptopSize {
+            font-size: 48px;
+line-height: 50px;
+        }
+
+        @include screenFullSize {
+            font-size: 48px;
+line-height: 50px;
+        }
+
+    }
+
+    &__block {
+        margin: 0 auto;
+        width: 257px;
+        height: 450px;
+        background-color: $base-color;
+        margin-bottom: 18px;
+
+        &:nth-child(3) {
+            margin-bottom: 55px;
+            margin-top: 35px;
+        }
+
+        &--title {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 24px;
+            text-transform: uppercase;
+            padding: 36px;
+            background-color: $title-color;
+        }
+
+        &--price {
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 62px;
+            padding: 30px 0 20px;
+            background-color: $base-color;
+        }
+
+        &--period {
+            padding-bottom: 73px;
+            background-color: $base-color;
+            text-transform: uppercase;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: "";
+                height: 5px;
+                width: 60px;
+                background-color: #8D81AC;
+                bottom: 38px;
+                right: 98px;
+            }
+        }
+
+        &--line {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            background-color: $base-color;
+        }
+
+        &--btn {
+            padding: 15px 37px;
+            margin: 37px 47px;
+            background-color: $button-color;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 15px;
+            line-height: 15px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+    }
+
+}
